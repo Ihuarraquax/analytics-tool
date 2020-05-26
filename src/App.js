@@ -1,25 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Menu from './components/Menu'
+import About from './components/main/About'
+import Analyze from './components/main/Analyze'
+import Indexes from './components/main/Indexes'
+import Formulas from './components/main/Formulas'
+import Tools from './components/main/Tools'
+import Contact from './components/main/Contact'
 
+import {
+  Switch,
+  Route
+} from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Menu />
+      <Switch>
+        <Route path="/o-projekcie" component={About}/>
+        <Route path="/analiza" component={Analyze}/>
+        <Route path="/indeksy" component={Indexes}/>
+        <Route path="/wzory" component={Formulas}/>
+        <Route path="/narzedzia" component={Tools}/>
+        <Route path="/kontakt" component={Contact}/>
+      </Switch>
+    </>
   );
 }
 
