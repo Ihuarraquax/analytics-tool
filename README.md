@@ -1,3 +1,10 @@
+live version available on heroku https://analiza-finansowa-gieldy.herokuapp.com/analiza
+
+
+
+---------------------------
+## |Create React App README|
+---------------------------
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
