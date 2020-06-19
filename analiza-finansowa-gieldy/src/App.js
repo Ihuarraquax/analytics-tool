@@ -6,7 +6,6 @@ import Analyze from './components/main/Analyze'
 import Indexes from './components/main/Indexes'
 import Formulas from './components/main/Formulas'
 import Tools from './components/main/Tools'
-import Contact from './components/main/Contact'
 
 import {
   Switch,
@@ -22,7 +21,6 @@ function App() {
         <Route path="/indeksy" component={Indexes}/>
         <Route path="/wzory" component={Formulas}/>
         <Route path="/narzedzia" component={Tools}/>
-        <Route path="/kontakt" component={Contact}/>
       </Switch>
     </>
   );

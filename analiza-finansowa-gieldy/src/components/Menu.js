@@ -10,7 +10,6 @@ import ShowChartIcon from '@material-ui/icons/ShowChart';
 import WorkIcon from '@material-ui/icons/Work';
 import FunctionsIcon from '@material-ui/icons/Functions';
 import BuildIcon from '@material-ui/icons/Build';
-import PermContactCalendarIcon from '@material-ui/icons/PermContactCalendar';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -22,7 +21,8 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   appbar: {
-    marginBottom: 20
+    marginBottom: 20,
+    padding: 0
   }
 }));
 
@@ -50,10 +50,6 @@ export default function Menu() {
         <Button className={classes.title} color="inherit" startIcon={<BuildIcon />} size="large"
           component={Link} to="/narzedzia">
           Narzędzia</Button>
- 
-        <Button className={classes.title} color="inherit" startIcon={<PermContactCalendarIcon />}  size="large"
-          component={Link} to="/kontakt">
-          Kontakt</Button>
       </Toolbar>
     </AppBar>
   )
