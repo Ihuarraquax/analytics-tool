@@ -21,12 +21,15 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
+  appbar: {
+    marginBottom: 20
+  }
 }));
 
 export default function Menu() {
   const classes = useStyles();
   return (
-    <AppBar position="static">
+    <AppBar className={classes.appbar} position="static">
       <Toolbar>
         <Button className={classes.title} color="inherit" startIcon={<InfoIcon />} size="large"
           component={Link} to="/">
