@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import * as d3 from "d3";
 import { Chart, Line, Bar } from 'react-chartjs-2'
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
@@ -64,7 +63,7 @@ export default function Analyze() {
   const [offsetTextFieldValue, setOffsetTextFieldValue] = useState(0);
   const [indexSelectValue, setIndexSelectValue] = useState("wig20");
   useEffect(() => {
-    const url = window.location.origin + "/api?index=" + index;
+    const url = "/api?index=" + index;
 
     axios.get(url)
       .then(res => {
