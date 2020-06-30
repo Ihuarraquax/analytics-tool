@@ -1,5 +1,4 @@
-live version available on heroku https://analiza-finansowa-gieldy.herokuapp.com/analiza
-
+live version available on heroku https://analiza-finansowa.herokuapp.com/
 
 
 ---------------------------
